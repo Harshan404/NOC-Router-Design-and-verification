@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+Enabled credit_mode at time 265000
+$finish called at time : 465 ns : File "D:/vivado/Projects/noc_router/noc_router.srcs/sim_1/new/tb_noc_router.sv" Line 86
