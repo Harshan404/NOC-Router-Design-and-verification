@@ -19,7 +19,7 @@
 //
 // Ports order mapping: 0=N,1=E,2=S,3=W,4=L (local)
 
-`timescale 1ns/1ps
+`timescale 1ps/1ps
 
 module noc_router #(
     parameter integer FLIT_WIDTH = 64,

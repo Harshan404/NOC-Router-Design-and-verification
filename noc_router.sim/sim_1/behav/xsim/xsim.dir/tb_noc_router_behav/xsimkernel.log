@@ -1,4 +1,0 @@
-Running: xsim.dir/tb_noc_router_behav/xsimk.exe -simmode gui -wdb tb_noc_router_behav.wdb -simrunnum 0 -socket 65359
-Design successfully loaded
-Design Loading Memory Usage: 9768 KB (Peak: 9768 KB)
-Design Loading CPU Usage: 15 ms
