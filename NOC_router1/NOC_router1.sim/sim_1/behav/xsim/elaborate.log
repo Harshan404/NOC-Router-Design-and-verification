@@ -1,0 +1,34 @@
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/vivado/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_all_modules_behav xil_defaultlib.tb_all_modules xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/vivado/Projects/NOC_router/src/tb/router/tb_all_modules.sv" Line 5. Module tb_all_modules has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/vivado/Projects/NOC_router/src/tb/router/tb_all_modules.sv" Line 5. Module tb_all_modules has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/vivado/Projects/NOC_router/NOC_router1/NOC_router1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/vivado/Projects/NOC_router/NOC_router1/NOC_router1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.noc_params
+Compiling module xil_defaultlib.input_block2crossbar_default
+Compiling module xil_defaultlib.input_block2switch_allocator_def...
+Compiling module xil_defaultlib.input_block2vc_allocator_default
+Compiling module xil_defaultlib.switch_allocator2crossbar_defaul...
+Compiling module xil_defaultlib.circular_buffer_default
+Compiling module xil_defaultlib.input_buffer
+Compiling module xil_defaultlib.rc_unit(X_CURRENT=2,Y_CURRENT=2,...
+Compiling module xil_defaultlib.input_port(X_CURRENT=2,Y_CURRENT...
+Compiling module xil_defaultlib.input_block(X_CURRENT=2,Y_CURREN...
+Compiling module xil_defaultlib.crossbar_default
+Compiling module xil_defaultlib.round_robin_arbiter(AGENTS_NUM=2...
+Compiling module xil_defaultlib.round_robin_arbiter(AGENTS_NUM=5...
+Compiling module xil_defaultlib.separable_input_first_allocator_...
+Compiling module xil_defaultlib.switch_allocator_default
+Compiling module xil_defaultlib.vc_allocator_default
+Compiling module xil_defaultlib.tb_all_modules
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_all_modules_behav

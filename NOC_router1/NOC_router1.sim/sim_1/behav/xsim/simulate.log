@@ -1,0 +1,47 @@
+Time resolution is 1 ps
+Packet size:           4
+Time                   15,port_num: 1 total time:          0, to read           0, timer           0
+push                   15
+Time                   20,port_num: 1 total time:          1, to read           1, timer           0
+Time                   25,port_num: 1 total time:          1, to read           1, timer           0
+push                   25
+Time                   30,port_num: 1 total time:          2, to read           2, timer           0
+Time                   35,port_num: 1 total time:          2, to read           2, timer           0
+push                   35
+Time                   40,port_num: 1 total time:          3, to read           3, timer           0
+Time                   45,port_num: 1 total time:          3, to read           3, timer           0
+push                   45
+Time                   50,port_num: 1 total time:          4, to read           4, timer           0
+Time                   55,port_num: 1 total time:          4, to read           4, timer           0
+Time                   60,port_num: 1 total time:          5, to read           4, timer           0
+Time                   65,port_num: 1 total time:          5, to read           4, timer           0
+Time                   70,port_num: 1 total time:          6, to read           4, timer           0
+Time                   75,port_num: 1 total time:          6, to read           4, timer           0
+Time                   80,port_num: 1 total time:          7, to read           4, timer           0
+Time                   85,port_num: 1 total time:          7, to read           4, timer           0
+Time                   90,port_num: 1 total time:          8, to read           4, timer           0
+Time                   95,port_num: 1 total time:          8, to read           4, timer           0
+Time                  100,port_num: 1 total time:          9, to read           4, timer           0
+Time                  105,port_num: 1 total time:          9, to read           4, timer           0
+Time                  110,port_num: 1 total time:         10, to read           4, timer           0
+Time                  115,port_num: 1 total time:         10, to read           4, timer           0
+Time                  120,port_num: 1 total time:         11, to read           4, timer           0
+Time                  125,port_num: 1 total time:         11, to read           4, timer           0
+Time                  130,port_num: 1 total time:         12, to read           4, timer           0
+Time                  135,port_num: 1 total time:         12, to read           4, timer           0
+Time                  140,port_num: 1 total time:         13, to read           4, timer           0
+Time                  145,port_num: 1 total time:         13, to read           4, timer           0
+Time                  150,port_num: 1 total time:         14, to read           4, timer           0
+Time                  155,port_num: 1 total time:         14, to read           4, timer           0
+Time                  160,port_num: 1 total time:         15, to read           4, timer           0
+Time                  165,port_num: 1 total time:         15, to read           4, timer           0
+Time                  170,port_num: 1 total time:         16, to read           4, timer           0
+Time                  175,port_num: 1 total time:         16, to read           4, timer           0
+Time                  180,port_num: 1 total time:         17, to read           4, timer           0
+Time                  185,port_num: 1 total time:         17, to read           4, timer           0
+Time                  190,port_num: 1 total time:         18, to read           4, timer           0
+Time                  195,port_num: 1 total time:         18, to read           4, timer           0
+Time                  200,port_num: 1 total time:         19, to read           4, timer           0
+Time                  205,port_num: 1 total time:         19, to read           4, timer           0
+Time                  210,port_num: 1 total time:         20, to read           4, timer           0
+$finish called at time : 260 ps : File "D:/vivado/Projects/NOC_router/src/tb/router/tb_all_modules.sv" Line 107

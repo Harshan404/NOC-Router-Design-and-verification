@@ -1,0 +1,29 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivado/Projects/NOC_router/src/rtl/noc/noc.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivado/Projects/NOC_router/src/rtl/input_port/circular_buffer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module circular_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivado/Projects/NOC_router/src/rtl/crossbar/crossbar.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crossbar
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivado/Projects/NOC_router/src/rtl/input_port/input_block.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_block
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivado/Projects/NOC_router/src/if/input_block2crossbar.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivado/Projects/NOC_router/src/if/input_block2switch_allocator.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivado/Projects/NOC_router/src/if/input_block2vc_allocator.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivado/Projects/NOC_router/src/rtl/input_port/input_buffer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivado/Projects/NOC_router/src/rtl/input_port/input_port.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_port
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivado/Projects/NOC_router/src/rtl/input_port/rc_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rc_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivado/Projects/NOC_router/src/rtl/allocators/round_robin_arbiter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module round_robin_arbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivado/Projects/NOC_router/src/rtl/allocators/separable_input_first_allocator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module separable_input_first_allocator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivado/Projects/NOC_router/src/rtl/allocators/switch_allocator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module switch_allocator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivado/Projects/NOC_router/src/if/switch_allocator2crossbar.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivado/Projects/NOC_router/src/rtl/allocators/vc_allocator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vc_allocator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vivado/Projects/NOC_router/src/tb/router/tb_all_modules.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_all_modules
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/Projects/NOC_router/NOC_router1/NOC_router1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
