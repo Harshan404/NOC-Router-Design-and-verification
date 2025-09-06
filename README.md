@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NoCRouter - RTL Router Design in SystemVerilog
 
 ## Summary
@@ -32,3 +33,6 @@ All tests have been executed in the *Vivado HL WebPack 2016.4* IDE on Linux mach
 *For further information, refer to the [project documentation](https://github.com/agalimberti/NoCRouter/raw/master/doc/Project%20Documentation.pdf)*.
 
 *The project was carried out by Andrea Galimberti ([@agalimberti](https://github.com/agalimberti)), Filippo Testa ([@f-testa](https://github.com/f-testa)) and Alberto Zeni ([@albertozeni](https://github.com/albertozeni)) in the Embedded Systems course at Politecnico di Milano, A.Y. 2016/2017.*
+=======
+# VLSI1
+>>>>>>> efc4e3658dff3e9539dbf8add994558ee6f9c6ce

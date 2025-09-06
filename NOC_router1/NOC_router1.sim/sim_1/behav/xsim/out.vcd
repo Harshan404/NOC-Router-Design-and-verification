@@ -1,0 +1,2587 @@
+$date
+   Sat Sep  6 11:48:22 2025
+$end
+
+$version
+  2025.1.0
+  $dumpfile ("out.vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module tb_all_modules $end
+$var reg 25 ! flit_written $end
+$var reg 25 " flit_read $end
+$var reg 32 # num_op [31:0] $end
+$var reg 32 $ timer [31:0] $end
+$var reg 32 % total_time [31:0] $end
+$var reg 32 & x_dest [31:0] $end
+$var reg 32 ' y_dest [31:0] $end
+$var reg 5 ( insert_not_compl [4:0] $end
+$var reg 5 ) head_done [4:0] $end
+$var reg 3 * port_num [2:0] $end
+$var reg 3 + test_port_num [2:0] $end
+$var reg 1 , vc_num [0:0] $end
+$var reg 1 - vc_num_next [0:0] $end
+$var reg 1 . clk $end
+$var reg 1 / rst $end
+$var reg 5 0 valid_flit_out [4:0] $end
+$var reg 10 1 on_off_in [9:0] $end
+$var reg 10 2 is_allocatable_in [9:0] $end
+$scope module ib2xbar_if $end
+$scope module input_block $end
+$upscope $end
+$scope module crossbar $end
+$upscope $end
+$upscope $end
+$scope module ib2sa_if $end
+$scope module input_block $end
+$upscope $end
+$scope module switch_allocator $end
+$upscope $end
+$upscope $end
+$scope module ib2va_if $end
+$scope module input_block $end
+$upscope $end
+$scope module vc_allocator $end
+$upscope $end
+$upscope $end
+$scope module sa2xbar_if $end
+$scope module switch_allocator $end
+$upscope $end
+$scope module crossbar $end
+$upscope $end
+$upscope $end
+$scope module input_block $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$scope module crossbar_if $end
+$scope module input_block $end
+$upscope $end
+$scope module crossbar $end
+$upscope $end
+$upscope $end
+$scope module sa_if $end
+$scope module input_block $end
+$upscope $end
+$scope module switch_allocator $end
+$upscope $end
+$upscope $end
+$scope module va_if $end
+$scope module input_block $end
+$upscope $end
+$scope module vc_allocator $end
+$upscope $end
+$upscope $end
+$scope module generate_input_ports[0].input_port $end
+$var reg 25 5 data_i $end
+$var wire 1 6 valid_flit_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var wire 1 7 sa_sel_vc_i [0:0] $end
+$var wire 2 8 va_valid_i [1:0] $end
+$var wire 1 9 sa_valid_i $end
+$var reg 25 : xb_flit_o $end
+$var reg 2 ; is_on_off_o [1:0] $end
+$var reg 2 < is_allocatable_vc_o [1:0] $end
+$var reg 2 = va_request_o [1:0] $end
+$var reg 6 > out_port_o [5:0] $end
+$var reg 2 ? is_full_o [1:0] $end
+$var reg 2 @ is_empty_o [1:0] $end
+$var reg 2 A error_o [1:0] $end
+$var reg 24 B data_cmd $end
+$var reg 50 C data_out [49:0] $end
+$var reg 3 D out_port_cmd $end
+$var reg 2 E read_cmd [1:0] $end
+$var reg 2 F write_cmd [1:0] $end
+$var reg 24 G xilinx_isim_temp_2_ln28_blkAssignCaching $end
+$scope module generate_virtual_channels[0].input_buffer $end
+$var reg 24 B data_i $end
+$var wire 1 H read_i $end
+$var wire 1 I write_i $end
+$var wire 1 J vc_new_i [0:0] $end
+$var wire 1 K vc_valid_i $end
+$var wire 3 L out_port_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var reg 25 M data_o $end
+$var reg 1 N is_full_o $end
+$var reg 1 O is_empty_o $end
+$var reg 1 P on_off_o $end
+$var reg 3 Q out_port_o $end
+$var reg 1 R vc_request_o $end
+$var reg 1 S switch_request_o $end
+$var reg 1 T vc_allocatable_o $end
+$var reg 1 U downstream_vc_o [0:0] $end
+$var reg 1 V error_o $end
+$var reg 2 W ss $end
+$var reg 2 X ss_next $end
+$var reg 1 Y downstream_vc_next [0:0] $end
+$var reg 1 Z read_cmd $end
+$var reg 1 [ write_cmd $end
+$var reg 1 \ end_packet $end
+$var reg 1 ] end_packet_next $end
+$var reg 1 ^ vc_allocatable_next $end
+$var reg 1 _ error_next $end
+$var reg 24 ` read_flit $end
+$var reg 3 a out_port_next $end
+$scope module circular_buffer $end
+$var reg 24 B data_i $end
+$var wire 1 b read_i $end
+$var wire 1 c write_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var reg 24 ` data_o $end
+$var reg 1 N is_full_o $end
+$var reg 1 O is_empty_o $end
+$var reg 1 P on_off_o $end
+$var reg 3 d read_ptr [2:0] $end
+$var reg 3 e write_ptr [2:0] $end
+$var reg 3 f read_ptr_next [2:0] $end
+$var reg 3 g write_ptr_next [2:0] $end
+$var reg 1 h is_full_next $end
+$var reg 1 i is_empty_next $end
+$var reg 1 j on_off_next $end
+$var reg 4 k num_flits [3:0] $end
+$var reg 4 l num_flits_next [3:0] $end
+$scope function increase_ptr $end
+$var reg 3 m increase_ptr [2:0] $end
+$var reg 3 n ptr [2:0] $end
+$upscope $end
+$scope function update_empty_on_read $end
+$upscope $end
+$scope function update_full_on_write $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module generate_virtual_channels[1].input_buffer $end
+$var reg 24 B data_i $end
+$var wire 1 o read_i $end
+$var wire 1 p write_i $end
+$var wire 1 q vc_new_i [1:1] $end
+$var wire 1 r vc_valid_i $end
+$var wire 3 s out_port_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var reg 25 t data_o $end
+$var reg 1 u is_full_o $end
+$var reg 1 v is_empty_o $end
+$var reg 1 w on_off_o $end
+$var reg 3 x out_port_o $end
+$var reg 1 y vc_request_o $end
+$var reg 1 z switch_request_o $end
+$var reg 1 { vc_allocatable_o $end
+$var reg 1 | downstream_vc_o [1:1] $end
+$var reg 1 } error_o $end
+$var reg 2 ~ ss $end
+$var reg 2 !! ss_next $end
+$var reg 1 "! downstream_vc_next [0:0] $end
+$var reg 1 #! read_cmd $end
+$var reg 1 $! write_cmd $end
+$var reg 1 %! end_packet $end
+$var reg 1 &! end_packet_next $end
+$var reg 1 '! vc_allocatable_next $end
+$var reg 1 (! error_next $end
+$var reg 24 )! read_flit $end
+$var reg 3 *! out_port_next $end
+$scope module circular_buffer $end
+$var reg 24 B data_i $end
+$var wire 1 +! read_i $end
+$var wire 1 ,! write_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var reg 24 )! data_o $end
+$var reg 1 u is_full_o $end
+$var reg 1 v is_empty_o $end
+$var reg 1 w on_off_o $end
+$var reg 3 -! read_ptr [2:0] $end
+$var reg 3 .! write_ptr [2:0] $end
+$var reg 3 /! read_ptr_next [2:0] $end
+$var reg 3 0! write_ptr_next [2:0] $end
+$var reg 1 1! is_full_next $end
+$var reg 1 2! is_empty_next $end
+$var reg 1 3! on_off_next $end
+$var reg 4 4! num_flits [3:0] $end
+$var reg 4 5! num_flits_next [3:0] $end
+$scope function increase_ptr $end
+$var reg 3 6! increase_ptr [2:0] $end
+$var reg 3 7! ptr [2:0] $end
+$upscope $end
+$scope function update_empty_on_read $end
+$upscope $end
+$scope function update_full_on_write $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module rc_unit $end
+$var wire 3 8! x_dest_i [2:0] $end
+$var wire 3 9! y_dest_i [2:0] $end
+$var reg 3 D out_port_o $end
+$var wire 3 :! x_offset [2:0] $end
+$var wire 3 ;! y_offset [2:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_input_ports[1].input_port $end
+$var reg 25 <! data_i $end
+$var wire 1 =! valid_flit_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var wire 1 >! sa_sel_vc_i [0:0] $end
+$var wire 2 ?! va_valid_i [1:0] $end
+$var wire 1 @! sa_valid_i $end
+$var reg 25 A! xb_flit_o $end
+$var reg 2 B! is_on_off_o [3:2] $end
+$var reg 2 C! is_allocatable_vc_o [3:2] $end
+$var reg 2 D! va_request_o [1:0] $end
+$var reg 6 E! out_port_o [11:6] $end
+$var reg 2 F! is_full_o [3:2] $end
+$var reg 2 G! is_empty_o [3:2] $end
+$var reg 2 H! error_o [3:2] $end
+$var reg 24 I! data_cmd $end
+$var reg 50 J! data_out [49:0] $end
+$var reg 3 K! out_port_cmd $end
+$var reg 2 L! read_cmd [1:0] $end
+$var reg 2 M! write_cmd [1:0] $end
+$var reg 24 N! xilinx_isim_temp_2_ln28_blkAssignCaching $end
+$scope module generate_virtual_channels[0].input_buffer $end
+$var reg 24 I! data_i $end
+$var wire 1 O! read_i $end
+$var wire 1 P! write_i $end
+$var wire 1 Q! vc_new_i [0:0] $end
+$var wire 1 R! vc_valid_i $end
+$var wire 3 S! out_port_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var reg 25 T! data_o $end
+$var reg 1 U! is_full_o $end
+$var reg 1 V! is_empty_o $end
+$var reg 1 W! on_off_o $end
+$var reg 3 X! out_port_o $end
+$var reg 1 Y! vc_request_o $end
+$var reg 1 Z! switch_request_o $end
+$var reg 1 [! vc_allocatable_o $end
+$var reg 1 \! downstream_vc_o [0:0] $end
+$var reg 1 ]! error_o $end
+$var reg 2 ^! ss $end
+$var reg 2 _! ss_next $end
+$var reg 1 `! downstream_vc_next [0:0] $end
+$var reg 1 a! read_cmd $end
+$var reg 1 b! write_cmd $end
+$var reg 1 c! end_packet $end
+$var reg 1 d! end_packet_next $end
+$var reg 1 e! vc_allocatable_next $end
+$var reg 1 f! error_next $end
+$var reg 24 g! read_flit $end
+$var reg 3 h! out_port_next $end
+$scope module circular_buffer $end
+$var reg 24 I! data_i $end
+$var wire 1 i! read_i $end
+$var wire 1 j! write_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var reg 24 g! data_o $end
+$var reg 1 U! is_full_o $end
+$var reg 1 V! is_empty_o $end
+$var reg 1 W! on_off_o $end
+$var reg 3 k! read_ptr [2:0] $end
+$var reg 3 l! write_ptr [2:0] $end
+$var reg 3 m! read_ptr_next [2:0] $end
+$var reg 3 n! write_ptr_next [2:0] $end
+$var reg 1 o! is_full_next $end
+$var reg 1 p! is_empty_next $end
+$var reg 1 q! on_off_next $end
+$var reg 4 r! num_flits [3:0] $end
+$var reg 4 s! num_flits_next [3:0] $end
+$scope function increase_ptr $end
+$var reg 3 t! increase_ptr [2:0] $end
+$var reg 3 u! ptr [2:0] $end
+$upscope $end
+$scope function update_empty_on_read $end
+$upscope $end
+$scope function update_full_on_write $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module generate_virtual_channels[1].input_buffer $end
+$var reg 24 I! data_i $end
+$var wire 1 v! read_i $end
+$var wire 1 w! write_i $end
+$var wire 1 x! vc_new_i [1:1] $end
+$var wire 1 y! vc_valid_i $end
+$var wire 3 z! out_port_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var reg 25 {! data_o $end
+$var reg 1 |! is_full_o $end
+$var reg 1 }! is_empty_o $end
+$var reg 1 ~! on_off_o $end
+$var reg 3 !" out_port_o $end
+$var reg 1 "" vc_request_o $end
+$var reg 1 #" switch_request_o $end
+$var reg 1 $" vc_allocatable_o $end
+$var reg 1 %" downstream_vc_o [1:1] $end
+$var reg 1 &" error_o $end
+$var reg 2 '" ss $end
+$var reg 2 (" ss_next $end
+$var reg 1 )" downstream_vc_next [0:0] $end
+$var reg 1 *" read_cmd $end
+$var reg 1 +" write_cmd $end
+$var reg 1 ," end_packet $end
+$var reg 1 -" end_packet_next $end
+$var reg 1 ." vc_allocatable_next $end
+$var reg 1 /" error_next $end
+$var reg 24 0" read_flit $end
+$var reg 3 1" out_port_next $end
+$scope module circular_buffer $end
+$var reg 24 I! data_i $end
+$var wire 1 2" read_i $end
+$var wire 1 3" write_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var reg 24 0" data_o $end
+$var reg 1 |! is_full_o $end
+$var reg 1 }! is_empty_o $end
+$var reg 1 ~! on_off_o $end
+$var reg 3 4" read_ptr [2:0] $end
+$var reg 3 5" write_ptr [2:0] $end
+$var reg 3 6" read_ptr_next [2:0] $end
+$var reg 3 7" write_ptr_next [2:0] $end
+$var reg 1 8" is_full_next $end
+$var reg 1 9" is_empty_next $end
+$var reg 1 :" on_off_next $end
+$var reg 4 ;" num_flits [3:0] $end
+$var reg 4 <" num_flits_next [3:0] $end
+$scope function increase_ptr $end
+$var reg 3 =" increase_ptr [2:0] $end
+$var reg 3 >" ptr [2:0] $end
+$upscope $end
+$scope function update_empty_on_read $end
+$upscope $end
+$scope function update_full_on_write $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module rc_unit $end
+$var wire 3 ?" x_dest_i [2:0] $end
+$var wire 3 @" y_dest_i [2:0] $end
+$var reg 3 K! out_port_o $end
+$var wire 3 A" x_offset [2:0] $end
+$var wire 3 B" y_offset [2:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_input_ports[2].input_port $end
+$var reg 25 C" data_i $end
+$var wire 1 D" valid_flit_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var wire 1 E" sa_sel_vc_i [0:0] $end
+$var wire 2 F" va_valid_i [1:0] $end
+$var wire 1 G" sa_valid_i $end
+$var reg 25 H" xb_flit_o $end
+$var reg 2 I" is_on_off_o [5:4] $end
+$var reg 2 J" is_allocatable_vc_o [5:4] $end
+$var reg 2 K" va_request_o [1:0] $end
+$var reg 6 L" out_port_o [17:12] $end
+$var reg 2 M" is_full_o [5:4] $end
+$var reg 2 N" is_empty_o [5:4] $end
+$var reg 2 O" error_o [5:4] $end
+$var reg 24 P" data_cmd $end
+$var reg 50 Q" data_out [49:0] $end
+$var reg 3 R" out_port_cmd $end
+$var reg 2 S" read_cmd [1:0] $end
+$var reg 2 T" write_cmd [1:0] $end
+$var reg 24 U" xilinx_isim_temp_2_ln28_blkAssignCaching $end
+$scope module generate_virtual_channels[0].input_buffer $end
+$var reg 24 P" data_i $end
+$var wire 1 V" read_i $end
+$var wire 1 W" write_i $end
+$var wire 1 X" vc_new_i [0:0] $end
+$var wire 1 Y" vc_valid_i $end
+$var wire 3 Z" out_port_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var reg 25 [" data_o $end
+$var reg 1 \" is_full_o $end
+$var reg 1 ]" is_empty_o $end
+$var reg 1 ^" on_off_o $end
+$var reg 3 _" out_port_o $end
+$var reg 1 `" vc_request_o $end
+$var reg 1 a" switch_request_o $end
+$var reg 1 b" vc_allocatable_o $end
+$var reg 1 c" downstream_vc_o [0:0] $end
+$var reg 1 d" error_o $end
+$var reg 2 e" ss $end
+$var reg 2 f" ss_next $end
+$var reg 1 g" downstream_vc_next [0:0] $end
+$var reg 1 h" read_cmd $end
+$var reg 1 i" write_cmd $end
+$var reg 1 j" end_packet $end
+$var reg 1 k" end_packet_next $end
+$var reg 1 l" vc_allocatable_next $end
+$var reg 1 m" error_next $end
+$var reg 24 n" read_flit $end
+$var reg 3 o" out_port_next $end
+$scope module circular_buffer $end
+$var reg 24 P" data_i $end
+$var wire 1 p" read_i $end
+$var wire 1 q" write_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var reg 24 n" data_o $end
+$var reg 1 \" is_full_o $end
+$var reg 1 ]" is_empty_o $end
+$var reg 1 ^" on_off_o $end
+$var reg 3 r" read_ptr [2:0] $end
+$var reg 3 s" write_ptr [2:0] $end
+$var reg 3 t" read_ptr_next [2:0] $end
+$var reg 3 u" write_ptr_next [2:0] $end
+$var reg 1 v" is_full_next $end
+$var reg 1 w" is_empty_next $end
+$var reg 1 x" on_off_next $end
+$var reg 4 y" num_flits [3:0] $end
+$var reg 4 z" num_flits_next [3:0] $end
+$scope function increase_ptr $end
+$var reg 3 {" increase_ptr [2:0] $end
+$var reg 3 |" ptr [2:0] $end
+$upscope $end
+$scope function update_empty_on_read $end
+$upscope $end
+$scope function update_full_on_write $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module generate_virtual_channels[1].input_buffer $end
+$var reg 24 P" data_i $end
+$var wire 1 }" read_i $end
+$var wire 1 ~" write_i $end
+$var wire 1 !# vc_new_i [1:1] $end
+$var wire 1 "# vc_valid_i $end
+$var wire 3 ## out_port_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var reg 25 $# data_o $end
+$var reg 1 %# is_full_o $end
+$var reg 1 &# is_empty_o $end
+$var reg 1 '# on_off_o $end
+$var reg 3 (# out_port_o $end
+$var reg 1 )# vc_request_o $end
+$var reg 1 *# switch_request_o $end
+$var reg 1 +# vc_allocatable_o $end
+$var reg 1 ,# downstream_vc_o [1:1] $end
+$var reg 1 -# error_o $end
+$var reg 2 .# ss $end
+$var reg 2 /# ss_next $end
+$var reg 1 0# downstream_vc_next [0:0] $end
+$var reg 1 1# read_cmd $end
+$var reg 1 2# write_cmd $end
+$var reg 1 3# end_packet $end
+$var reg 1 4# end_packet_next $end
+$var reg 1 5# vc_allocatable_next $end
+$var reg 1 6# error_next $end
+$var reg 24 7# read_flit $end
+$var reg 3 8# out_port_next $end
+$scope module circular_buffer $end
+$var reg 24 P" data_i $end
+$var wire 1 9# read_i $end
+$var wire 1 :# write_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var reg 24 7# data_o $end
+$var reg 1 %# is_full_o $end
+$var reg 1 &# is_empty_o $end
+$var reg 1 '# on_off_o $end
+$var reg 3 ;# read_ptr [2:0] $end
+$var reg 3 <# write_ptr [2:0] $end
+$var reg 3 =# read_ptr_next [2:0] $end
+$var reg 3 ># write_ptr_next [2:0] $end
+$var reg 1 ?# is_full_next $end
+$var reg 1 @# is_empty_next $end
+$var reg 1 A# on_off_next $end
+$var reg 4 B# num_flits [3:0] $end
+$var reg 4 C# num_flits_next [3:0] $end
+$scope function increase_ptr $end
+$var reg 3 D# increase_ptr [2:0] $end
+$var reg 3 E# ptr [2:0] $end
+$upscope $end
+$scope function update_empty_on_read $end
+$upscope $end
+$scope function update_full_on_write $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module rc_unit $end
+$var wire 3 F# x_dest_i [2:0] $end
+$var wire 3 G# y_dest_i [2:0] $end
+$var reg 3 R" out_port_o $end
+$var wire 3 H# x_offset [2:0] $end
+$var wire 3 I# y_offset [2:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_input_ports[3].input_port $end
+$var reg 25 J# data_i $end
+$var wire 1 K# valid_flit_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var wire 1 L# sa_sel_vc_i [0:0] $end
+$var wire 2 M# va_valid_i [1:0] $end
+$var wire 1 N# sa_valid_i $end
+$var reg 25 O# xb_flit_o $end
+$var reg 2 P# is_on_off_o [7:6] $end
+$var reg 2 Q# is_allocatable_vc_o [7:6] $end
+$var reg 2 R# va_request_o [1:0] $end
+$var reg 6 S# out_port_o [23:18] $end
+$var reg 2 T# is_full_o [7:6] $end
+$var reg 2 U# is_empty_o [7:6] $end
+$var reg 2 V# error_o [7:6] $end
+$var reg 24 W# data_cmd $end
+$var reg 50 X# data_out [49:0] $end
+$var reg 3 Y# out_port_cmd $end
+$var reg 2 Z# read_cmd [1:0] $end
+$var reg 2 [# write_cmd [1:0] $end
+$var reg 24 \# xilinx_isim_temp_2_ln28_blkAssignCaching $end
+$scope module generate_virtual_channels[0].input_buffer $end
+$var reg 24 W# data_i $end
+$var wire 1 ]# read_i $end
+$var wire 1 ^# write_i $end
+$var wire 1 _# vc_new_i [0:0] $end
+$var wire 1 `# vc_valid_i $end
+$var wire 3 a# out_port_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var reg 25 b# data_o $end
+$var reg 1 c# is_full_o $end
+$var reg 1 d# is_empty_o $end
+$var reg 1 e# on_off_o $end
+$var reg 3 f# out_port_o $end
+$var reg 1 g# vc_request_o $end
+$var reg 1 h# switch_request_o $end
+$var reg 1 i# vc_allocatable_o $end
+$var reg 1 j# downstream_vc_o [0:0] $end
+$var reg 1 k# error_o $end
+$var reg 2 l# ss $end
+$var reg 2 m# ss_next $end
+$var reg 1 n# downstream_vc_next [0:0] $end
+$var reg 1 o# read_cmd $end
+$var reg 1 p# write_cmd $end
+$var reg 1 q# end_packet $end
+$var reg 1 r# end_packet_next $end
+$var reg 1 s# vc_allocatable_next $end
+$var reg 1 t# error_next $end
+$var reg 24 u# read_flit $end
+$var reg 3 v# out_port_next $end
+$scope module circular_buffer $end
+$var reg 24 W# data_i $end
+$var wire 1 w# read_i $end
+$var wire 1 x# write_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var reg 24 u# data_o $end
+$var reg 1 c# is_full_o $end
+$var reg 1 d# is_empty_o $end
+$var reg 1 e# on_off_o $end
+$var reg 3 y# read_ptr [2:0] $end
+$var reg 3 z# write_ptr [2:0] $end
+$var reg 3 {# read_ptr_next [2:0] $end
+$var reg 3 |# write_ptr_next [2:0] $end
+$var reg 1 }# is_full_next $end
+$var reg 1 ~# is_empty_next $end
+$var reg 1 !$ on_off_next $end
+$var reg 4 "$ num_flits [3:0] $end
+$var reg 4 #$ num_flits_next [3:0] $end
+$scope function increase_ptr $end
+$var reg 3 $$ increase_ptr [2:0] $end
+$var reg 3 %$ ptr [2:0] $end
+$upscope $end
+$scope function update_empty_on_read $end
+$upscope $end
+$scope function update_full_on_write $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module generate_virtual_channels[1].input_buffer $end
+$var reg 24 W# data_i $end
+$var wire 1 &$ read_i $end
+$var wire 1 '$ write_i $end
+$var wire 1 ($ vc_new_i [1:1] $end
+$var wire 1 )$ vc_valid_i $end
+$var wire 3 *$ out_port_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var reg 25 +$ data_o $end
+$var reg 1 ,$ is_full_o $end
+$var reg 1 -$ is_empty_o $end
+$var reg 1 .$ on_off_o $end
+$var reg 3 /$ out_port_o $end
+$var reg 1 0$ vc_request_o $end
+$var reg 1 1$ switch_request_o $end
+$var reg 1 2$ vc_allocatable_o $end
+$var reg 1 3$ downstream_vc_o [1:1] $end
+$var reg 1 4$ error_o $end
+$var reg 2 5$ ss $end
+$var reg 2 6$ ss_next $end
+$var reg 1 7$ downstream_vc_next [0:0] $end
+$var reg 1 8$ read_cmd $end
+$var reg 1 9$ write_cmd $end
+$var reg 1 :$ end_packet $end
+$var reg 1 ;$ end_packet_next $end
+$var reg 1 <$ vc_allocatable_next $end
+$var reg 1 =$ error_next $end
+$var reg 24 >$ read_flit $end
+$var reg 3 ?$ out_port_next $end
+$scope module circular_buffer $end
+$var reg 24 W# data_i $end
+$var wire 1 @$ read_i $end
+$var wire 1 A$ write_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var reg 24 >$ data_o $end
+$var reg 1 ,$ is_full_o $end
+$var reg 1 -$ is_empty_o $end
+$var reg 1 .$ on_off_o $end
+$var reg 3 B$ read_ptr [2:0] $end
+$var reg 3 C$ write_ptr [2:0] $end
+$var reg 3 D$ read_ptr_next [2:0] $end
+$var reg 3 E$ write_ptr_next [2:0] $end
+$var reg 1 F$ is_full_next $end
+$var reg 1 G$ is_empty_next $end
+$var reg 1 H$ on_off_next $end
+$var reg 4 I$ num_flits [3:0] $end
+$var reg 4 J$ num_flits_next [3:0] $end
+$scope function increase_ptr $end
+$var reg 3 K$ increase_ptr [2:0] $end
+$var reg 3 L$ ptr [2:0] $end
+$upscope $end
+$scope function update_empty_on_read $end
+$upscope $end
+$scope function update_full_on_write $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module rc_unit $end
+$var wire 3 M$ x_dest_i [2:0] $end
+$var wire 3 N$ y_dest_i [2:0] $end
+$var reg 3 Y# out_port_o $end
+$var wire 3 O$ x_offset [2:0] $end
+$var wire 3 P$ y_offset [2:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_input_ports[4].input_port $end
+$var reg 25 Q$ data_i $end
+$var wire 1 R$ valid_flit_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var wire 1 S$ sa_sel_vc_i [0:0] $end
+$var wire 2 T$ va_valid_i [1:0] $end
+$var wire 1 U$ sa_valid_i $end
+$var reg 25 V$ xb_flit_o $end
+$var reg 2 W$ is_on_off_o [9:8] $end
+$var reg 2 X$ is_allocatable_vc_o [9:8] $end
+$var reg 2 Y$ va_request_o [1:0] $end
+$var reg 6 Z$ out_port_o [29:24] $end
+$var reg 2 [$ is_full_o [9:8] $end
+$var reg 2 \$ is_empty_o [9:8] $end
+$var reg 2 ]$ error_o [9:8] $end
+$var reg 24 ^$ data_cmd $end
+$var reg 50 _$ data_out [49:0] $end
+$var reg 3 `$ out_port_cmd $end
+$var reg 2 a$ read_cmd [1:0] $end
+$var reg 2 b$ write_cmd [1:0] $end
+$var reg 24 c$ xilinx_isim_temp_2_ln28_blkAssignCaching $end
+$scope module generate_virtual_channels[0].input_buffer $end
+$var reg 24 ^$ data_i $end
+$var wire 1 d$ read_i $end
+$var wire 1 e$ write_i $end
+$var wire 1 f$ vc_new_i [0:0] $end
+$var wire 1 g$ vc_valid_i $end
+$var wire 3 h$ out_port_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var reg 25 i$ data_o $end
+$var reg 1 j$ is_full_o $end
+$var reg 1 k$ is_empty_o $end
+$var reg 1 l$ on_off_o $end
+$var reg 3 m$ out_port_o $end
+$var reg 1 n$ vc_request_o $end
+$var reg 1 o$ switch_request_o $end
+$var reg 1 p$ vc_allocatable_o $end
+$var reg 1 q$ downstream_vc_o [0:0] $end
+$var reg 1 r$ error_o $end
+$var reg 2 s$ ss $end
+$var reg 2 t$ ss_next $end
+$var reg 1 u$ downstream_vc_next [0:0] $end
+$var reg 1 v$ read_cmd $end
+$var reg 1 w$ write_cmd $end
+$var reg 1 x$ end_packet $end
+$var reg 1 y$ end_packet_next $end
+$var reg 1 z$ vc_allocatable_next $end
+$var reg 1 {$ error_next $end
+$var reg 24 |$ read_flit $end
+$var reg 3 }$ out_port_next $end
+$scope module circular_buffer $end
+$var reg 24 ^$ data_i $end
+$var wire 1 ~$ read_i $end
+$var wire 1 !% write_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var reg 24 |$ data_o $end
+$var reg 1 j$ is_full_o $end
+$var reg 1 k$ is_empty_o $end
+$var reg 1 l$ on_off_o $end
+$var reg 3 "% read_ptr [2:0] $end
+$var reg 3 #% write_ptr [2:0] $end
+$var reg 3 $% read_ptr_next [2:0] $end
+$var reg 3 %% write_ptr_next [2:0] $end
+$var reg 1 &% is_full_next $end
+$var reg 1 '% is_empty_next $end
+$var reg 1 (% on_off_next $end
+$var reg 4 )% num_flits [3:0] $end
+$var reg 4 *% num_flits_next [3:0] $end
+$scope function increase_ptr $end
+$var reg 3 +% increase_ptr [2:0] $end
+$var reg 3 ,% ptr [2:0] $end
+$upscope $end
+$scope function update_empty_on_read $end
+$upscope $end
+$scope function update_full_on_write $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module generate_virtual_channels[1].input_buffer $end
+$var reg 24 ^$ data_i $end
+$var wire 1 -% read_i $end
+$var wire 1 .% write_i $end
+$var wire 1 /% vc_new_i [1:1] $end
+$var wire 1 0% vc_valid_i $end
+$var wire 3 1% out_port_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var reg 25 2% data_o $end
+$var reg 1 3% is_full_o $end
+$var reg 1 4% is_empty_o $end
+$var reg 1 5% on_off_o $end
+$var reg 3 6% out_port_o $end
+$var reg 1 7% vc_request_o $end
+$var reg 1 8% switch_request_o $end
+$var reg 1 9% vc_allocatable_o $end
+$var reg 1 :% downstream_vc_o [1:1] $end
+$var reg 1 ;% error_o $end
+$var reg 2 <% ss $end
+$var reg 2 =% ss_next $end
+$var reg 1 >% downstream_vc_next [0:0] $end
+$var reg 1 ?% read_cmd $end
+$var reg 1 @% write_cmd $end
+$var reg 1 A% end_packet $end
+$var reg 1 B% end_packet_next $end
+$var reg 1 C% vc_allocatable_next $end
+$var reg 1 D% error_next $end
+$var reg 24 E% read_flit $end
+$var reg 3 F% out_port_next $end
+$scope module circular_buffer $end
+$var reg 24 ^$ data_i $end
+$var wire 1 G% read_i $end
+$var wire 1 H% write_i $end
+$var wire 1 3 rst $end
+$var wire 1 4 clk $end
+$var reg 24 E% data_o $end
+$var reg 1 3% is_full_o $end
+$var reg 1 4% is_empty_o $end
+$var reg 1 5% on_off_o $end
+$var reg 3 I% read_ptr [2:0] $end
+$var reg 3 J% write_ptr [2:0] $end
+$var reg 3 K% read_ptr_next [2:0] $end
+$var reg 3 L% write_ptr_next [2:0] $end
+$var reg 1 M% is_full_next $end
+$var reg 1 N% is_empty_next $end
+$var reg 1 O% on_off_next $end
+$var reg 4 P% num_flits [3:0] $end
+$var reg 4 Q% num_flits_next [3:0] $end
+$scope function increase_ptr $end
+$var reg 3 R% increase_ptr [2:0] $end
+$var reg 3 S% ptr [2:0] $end
+$upscope $end
+$scope function update_empty_on_read $end
+$upscope $end
+$scope function update_full_on_write $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module rc_unit $end
+$var wire 3 T% x_dest_i [2:0] $end
+$var wire 3 U% y_dest_i [2:0] $end
+$var reg 3 `$ out_port_o $end
+$var wire 3 V% x_offset [2:0] $end
+$var wire 3 W% y_offset [2:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module crossbar $end
+$scope module ib_if $end
+$scope module input_block $end
+$upscope $end
+$scope module crossbar $end
+$upscope $end
+$upscope $end
+$scope module sa_if $end
+$scope module switch_allocator $end
+$upscope $end
+$scope module crossbar $end
+$upscope $end
+$upscope $end
+$scope begin Block17_51 $end
+$var reg 32 X% ip [31:0] $end
+$upscope $end
+$upscope $end
+$scope module switch_allocator $end
+$var wire 1 Y% rst $end
+$var wire 1 Z% clk $end
+$var wire 10 [% on_off_i [9:0] $end
+$var reg 5 0 valid_flit_o [4:0] $end
+$var reg 10 \% request_cmd [9:0] $end
+$var reg 10 ]% grant [9:0] $end
+$scope module ib_if $end
+$scope module input_block $end
+$upscope $end
+$scope module switch_allocator $end
+$upscope $end
+$upscope $end
+$scope module xbar_if $end
+$scope module switch_allocator $end
+$upscope $end
+$scope module crossbar $end
+$upscope $end
+$upscope $end
+$scope module separable_input_first_allocator $end
+$var wire 1 Y% rst $end
+$var wire 1 Z% clk $end
+$var wire 10 ^% request_i [9:0] $end
+$var reg 10 ]% grant_o [9:0] $end
+$var reg 25 _% out_request [24:0] $end
+$var reg 25 `% ip_grant [24:0] $end
+$var reg 10 a% vc_grant [9:0] $end
+$scope module generate_input_round_robin_arbiters[0].round_robin_arbiter $end
+$var wire 1 Y% rst $end
+$var wire 1 Z% clk $end
+$var wire 2 b% requests_i [1:0] $end
+$var reg 2 c% grants_o [1:0] $end
+$var reg 1 d% highest_priority [0:0] $end
+$var reg 1 e% highest_priority_next [0:0] $end
+$scope begin Block45_54 $end
+$var reg 32 f% i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_input_round_robin_arbiters[1].round_robin_arbiter $end
+$var wire 1 Y% rst $end
+$var wire 1 Z% clk $end
+$var wire 2 g% requests_i [3:2] $end
+$var reg 2 h% grants_o [3:2] $end
+$var reg 1 i% highest_priority [0:0] $end
+$var reg 1 j% highest_priority_next [0:0] $end
+$scope begin Block45_54 $end
+$var reg 32 k% i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_input_round_robin_arbiters[2].round_robin_arbiter $end
+$var wire 1 Y% rst $end
+$var wire 1 Z% clk $end
+$var wire 2 l% requests_i [5:4] $end
+$var reg 2 m% grants_o [5:4] $end
+$var reg 1 n% highest_priority [0:0] $end
+$var reg 1 o% highest_priority_next [0:0] $end
+$scope begin Block45_54 $end
+$var reg 32 p% i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_input_round_robin_arbiters[3].round_robin_arbiter $end
+$var wire 1 Y% rst $end
+$var wire 1 Z% clk $end
+$var wire 2 q% requests_i [7:6] $end
+$var reg 2 r% grants_o [7:6] $end
+$var reg 1 s% highest_priority [0:0] $end
+$var reg 1 t% highest_priority_next [0:0] $end
+$scope begin Block45_54 $end
+$var reg 32 u% i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_input_round_robin_arbiters[4].round_robin_arbiter $end
+$var wire 1 Y% rst $end
+$var wire 1 Z% clk $end
+$var wire 2 v% requests_i [9:8] $end
+$var reg 2 w% grants_o [9:8] $end
+$var reg 1 x% highest_priority [0:0] $end
+$var reg 1 y% highest_priority_next [0:0] $end
+$scope begin Block45_54 $end
+$var reg 32 z% i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_output_round_robin_arbiters[0].round_robin_arbiter $end
+$var wire 1 Y% rst $end
+$var wire 1 Z% clk $end
+$var wire 5 {% requests_i [4:0] $end
+$var reg 5 |% grants_o [4:0] $end
+$var reg 3 }% highest_priority [2:0] $end
+$var reg 3 ~% highest_priority_next [2:0] $end
+$scope begin Block45_65 $end
+$var reg 32 !& i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_output_round_robin_arbiters[1].round_robin_arbiter $end
+$var wire 1 Y% rst $end
+$var wire 1 Z% clk $end
+$var wire 5 "& requests_i [4:0] $end
+$var reg 5 #& grants_o [9:5] $end
+$var reg 3 $& highest_priority [2:0] $end
+$var reg 3 %& highest_priority_next [2:0] $end
+$scope begin Block45_65 $end
+$var reg 32 && i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_output_round_robin_arbiters[2].round_robin_arbiter $end
+$var wire 1 Y% rst $end
+$var wire 1 Z% clk $end
+$var wire 5 '& requests_i [4:0] $end
+$var reg 5 (& grants_o [14:10] $end
+$var reg 3 )& highest_priority [2:0] $end
+$var reg 3 *& highest_priority_next [2:0] $end
+$scope begin Block45_65 $end
+$var reg 32 +& i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_output_round_robin_arbiters[3].round_robin_arbiter $end
+$var wire 1 Y% rst $end
+$var wire 1 Z% clk $end
+$var wire 5 ,& requests_i [4:0] $end
+$var reg 5 -& grants_o [19:15] $end
+$var reg 3 .& highest_priority [2:0] $end
+$var reg 3 /& highest_priority_next [2:0] $end
+$scope begin Block45_65 $end
+$var reg 32 0& i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_output_round_robin_arbiters[4].round_robin_arbiter $end
+$var wire 1 Y% rst $end
+$var wire 1 Z% clk $end
+$var wire 5 1& requests_i [4:0] $end
+$var reg 5 2& grants_o [24:20] $end
+$var reg 3 3& highest_priority [2:0] $end
+$var reg 3 4& highest_priority_next [2:0] $end
+$scope begin Block45_65 $end
+$var reg 32 5& i [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin Block75_75 $end
+$var reg 32 6& in_port [31:0] $end
+$scope begin Block77_76 $end
+$var reg 32 7& in_vc [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin Block87_77 $end
+$var reg 32 8& out_port [31:0] $end
+$scope begin Block89_78 $end
+$var reg 32 9& in_port [31:0] $end
+$scope begin Block91_79 $end
+$var reg 32 :& in_vc [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin Block39_81 $end
+$var reg 32 ;& port [31:0] $end
+$upscope $end
+$scope begin Block48_82 $end
+$var reg 32 <& up_port [31:0] $end
+$scope begin Block50_83 $end
+$var reg 32 =& up_vc [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin Block59_84 $end
+$var reg 32 >& up_port [31:0] $end
+$scope begin Block61_85 $end
+$var reg 32 ?& up_vc [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module vc_allocator $end
+$var wire 1 @& rst $end
+$var wire 1 A& clk $end
+$var wire 10 B& idle_downstream_vc_i [9:0] $end
+$var reg 10 C& request_cmd [9:0] $end
+$var reg 10 D& grant [9:0] $end
+$var reg 10 E& is_available_vc [9:0] $end
+$var reg 10 F& is_available_vc_next [9:0] $end
+$scope module ib_if $end
+$scope module input_block $end
+$upscope $end
+$scope module vc_allocator $end
+$upscope $end
+$upscope $end
+$scope module separable_input_first_allocator $end
+$var wire 1 @& rst $end
+$var wire 1 A& clk $end
+$var wire 10 G& request_i [9:0] $end
+$var reg 10 D& grant_o [9:0] $end
+$var reg 25 H& out_request [24:0] $end
+$var reg 25 I& ip_grant [24:0] $end
+$var reg 10 J& vc_grant [9:0] $end
+$scope module generate_input_round_robin_arbiters[0].round_robin_arbiter $end
+$var wire 1 @& rst $end
+$var wire 1 A& clk $end
+$var wire 2 K& requests_i [1:0] $end
+$var reg 2 L& grants_o [1:0] $end
+$var reg 1 M& highest_priority [0:0] $end
+$var reg 1 N& highest_priority_next [0:0] $end
+$scope begin Block45_54 $end
+$var reg 32 O& i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_input_round_robin_arbiters[1].round_robin_arbiter $end
+$var wire 1 @& rst $end
+$var wire 1 A& clk $end
+$var wire 2 P& requests_i [3:2] $end
+$var reg 2 Q& grants_o [3:2] $end
+$var reg 1 R& highest_priority [0:0] $end
+$var reg 1 S& highest_priority_next [0:0] $end
+$scope begin Block45_54 $end
+$var reg 32 T& i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_input_round_robin_arbiters[2].round_robin_arbiter $end
+$var wire 1 @& rst $end
+$var wire 1 A& clk $end
+$var wire 2 U& requests_i [5:4] $end
+$var reg 2 V& grants_o [5:4] $end
+$var reg 1 W& highest_priority [0:0] $end
+$var reg 1 X& highest_priority_next [0:0] $end
+$scope begin Block45_54 $end
+$var reg 32 Y& i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_input_round_robin_arbiters[3].round_robin_arbiter $end
+$var wire 1 @& rst $end
+$var wire 1 A& clk $end
+$var wire 2 Z& requests_i [7:6] $end
+$var reg 2 [& grants_o [7:6] $end
+$var reg 1 \& highest_priority [0:0] $end
+$var reg 1 ]& highest_priority_next [0:0] $end
+$scope begin Block45_54 $end
+$var reg 32 ^& i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_input_round_robin_arbiters[4].round_robin_arbiter $end
+$var wire 1 @& rst $end
+$var wire 1 A& clk $end
+$var wire 2 _& requests_i [9:8] $end
+$var reg 2 `& grants_o [9:8] $end
+$var reg 1 a& highest_priority [0:0] $end
+$var reg 1 b& highest_priority_next [0:0] $end
+$scope begin Block45_54 $end
+$var reg 32 c& i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_output_round_robin_arbiters[0].round_robin_arbiter $end
+$var wire 1 @& rst $end
+$var wire 1 A& clk $end
+$var wire 5 d& requests_i [4:0] $end
+$var reg 5 e& grants_o [4:0] $end
+$var reg 3 f& highest_priority [2:0] $end
+$var reg 3 g& highest_priority_next [2:0] $end
+$scope begin Block45_65 $end
+$var reg 32 h& i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_output_round_robin_arbiters[1].round_robin_arbiter $end
+$var wire 1 @& rst $end
+$var wire 1 A& clk $end
+$var wire 5 i& requests_i [4:0] $end
+$var reg 5 j& grants_o [9:5] $end
+$var reg 3 k& highest_priority [2:0] $end
+$var reg 3 l& highest_priority_next [2:0] $end
+$scope begin Block45_65 $end
+$var reg 32 m& i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_output_round_robin_arbiters[2].round_robin_arbiter $end
+$var wire 1 @& rst $end
+$var wire 1 A& clk $end
+$var wire 5 n& requests_i [4:0] $end
+$var reg 5 o& grants_o [14:10] $end
+$var reg 3 p& highest_priority [2:0] $end
+$var reg 3 q& highest_priority_next [2:0] $end
+$scope begin Block45_65 $end
+$var reg 32 r& i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_output_round_robin_arbiters[3].round_robin_arbiter $end
+$var wire 1 @& rst $end
+$var wire 1 A& clk $end
+$var wire 5 s& requests_i [4:0] $end
+$var reg 5 t& grants_o [19:15] $end
+$var reg 3 u& highest_priority [2:0] $end
+$var reg 3 v& highest_priority_next [2:0] $end
+$scope begin Block45_65 $end
+$var reg 32 w& i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module generate_output_round_robin_arbiters[4].round_robin_arbiter $end
+$var wire 1 @& rst $end
+$var wire 1 A& clk $end
+$var wire 5 x& requests_i [4:0] $end
+$var reg 5 y& grants_o [24:20] $end
+$var reg 3 z& highest_priority [2:0] $end
+$var reg 3 {& highest_priority_next [2:0] $end
+$scope begin Block45_65 $end
+$var reg 32 |& i [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin Block75_75 $end
+$var reg 32 }& in_port [31:0] $end
+$scope begin Block77_76 $end
+$var reg 32 ~& in_vc [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin Block87_77 $end
+$var reg 32 !' out_port [31:0] $end
+$scope begin Block89_78 $end
+$var reg 32 "' in_port [31:0] $end
+$scope begin Block91_79 $end
+$var reg 32 #' in_vc [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin Block61_109 $end
+$var reg 32 $' up_port [31:0] $end
+$scope begin Block63_110 $end
+$var reg 32 %' up_vc [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin Block71_111 $end
+$var reg 32 &' up_port [31:0] $end
+$scope begin Block73_112 $end
+$var reg 32 '' up_vc [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin Block82_113 $end
+$var reg 32 (' up_port [31:0] $end
+$scope begin Block84_114 $end
+$var reg 32 )' up_vc [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin Block95_115 $end
+$var reg 32 *' down_port [31:0] $end
+$scope begin Block97_116 $end
+$var reg 32 +' down_vc [31:0] $end
+$upscope $end
+$upscope $end
+$scope function assign_downstream_vc $end
+$var reg 1 ,' assign_downstream_vc [0:0] $end
+$var reg 3 -' port $end
+$var reg 32 .' vc [31:0] $end
+$upscope $end
+$upscope $end
+$scope task dump_output $end
+$upscope $end
+$scope task initialize $end
+$upscope $end
+$scope task clear_reset $end
+$upscope $end
+$scope task create_flit $end
+$var reg 2 /' lab $end
+$upscope $end
+$scope task write_flit $end
+$upscope $end
+$scope task push_flit $end
+$upscope $end
+$scope task test $end
+$var reg 1 0' curr_port [0:0] $end
+$upscope $end
+$scope task insertFlit $end
+$upscope $end
+$scope task readFlit $end
+$upscope $end
+$scope task checkFlits $end
+$upscope $end
+$scope task initTest $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+bx !
+b0 !!
+b0 !"
+x!#
+1!$
+0!%
+b101 !&
+b101 !'
+bx "
+0"!
+0""
+0"#
+b0 "$
+b0 "%
+b0 "&
+b101 "'
+b0 #
+0#!
+0#"
+b0 ##
+b0 #$
+b0 #%
+b0 #&
+b10 #'
+b0 $
+0$!
+0$"
+bx0xxxxxxxxxxxxxxxxxxxxxx $#
+bx $$
+b0 $%
+b0 $&
+b101 $'
+b0 %
+0%!
+0%"
+0%#
+bx %$
+b0 %%
+b0 %&
+b10 %'
+b0 &
+0&!
+0&"
+1&#
+0&$
+0&%
+b101 &&
+b101 &'
+b0 '
+0'!
+b0 '"
+1'#
+0'$
+1'%
+b0 '&
+b10 ''
+bx (
+0(!
+b0 ("
+b0 (#
+x($
+1(%
+b0 (&
+b101 ('
+bx )
+bx )!
+0)"
+0)#
+0)$
+b0 )%
+b0 )&
+b10 )'
+bx *
+b0 *!
+0*"
+0*#
+b0 *$
+b0 *%
+b0 *&
+b101 *'
+bx +
+0+!
+0+"
+0+#
+bx0xxxxxxxxxxxxxxxxxxxxxx +$
+bx +%
+b101 +&
+b10 +'
+x,
+0,!
+0,"
+0,#
+0,$
+bx ,%
+b0 ,&
+x,'
+x-
+b0 -!
+0-"
+0-#
+1-$
+0-%
+b0 -&
+bx -'
+0.
+b0 .!
+0."
+b0 .#
+1.$
+0.%
+b0 .&
+b0 .'
+1/
+b0 /!
+0/"
+b0 /#
+b0 /$
+x/%
+b0 /&
+bx /'
+b0 0
+b0 0!
+bx 0"
+00#
+00$
+00%
+b101 0&
+x0'
+bx 1
+01!
+b0 1"
+01#
+01$
+b0 1%
+b0 1&
+bx 2
+12!
+02"
+02#
+02$
+bx0xxxxxxxxxxxxxxxxxxxxxx 2%
+b0 2&
+13
+13!
+03"
+03#
+03$
+03%
+b0 3&
+04
+b0 4!
+b0 4"
+04#
+04$
+14%
+b0 4&
+bx 5
+b0 5!
+b0 5"
+05#
+b0 5$
+15%
+b101 5&
+x6
+bx 6!
+b0 6"
+06#
+b0 6$
+b0 6%
+b101 6&
+07
+bx 7!
+b0 7"
+bx 7#
+07$
+07%
+b10 7&
+b0 8
+bx 8!
+08"
+b0 8#
+08$
+08%
+b101 8&
+09
+bx 9!
+19"
+09#
+09$
+09%
+b101 9&
+bx0xxxxxxxxxxxxxxxxxxxxxx :
+bx :!
+1:"
+0:#
+0:$
+0:%
+b10 :&
+b11 ;
+bx ;!
+b0 ;"
+b0 ;#
+0;$
+0;%
+b101 ;&
+b0 <
+bx <!
+b0 <"
+b0 <#
+0<$
+b0 <%
+b101 <&
+b0 =
+x=!
+bx ="
+b0 =#
+0=$
+b0 =%
+b10 =&
+b0 >
+0>!
+bx >"
+b0 >#
+bx >$
+0>%
+b101 >&
+b0 ?
+b0 ?!
+bx ?"
+0?#
+b0 ?$
+0?%
+b10 ?&
+b11 @
+0@!
+bx @"
+1@#
+0@$
+0@%
+1@&
+b0 A
+bx0xxxxxxxxxxxxxxxxxxxxxx A!
+bx A"
+1A#
+0A$
+0A%
+0A&
+bx B
+b11 B!
+bx B"
+b0 B#
+b0 B$
+0B%
+bx B&
+bx0xxxxxxxxxxxxxxxxxxxxxxxx0xxxxxxxxxxxxxxxxxxxxxx C
+b0 C!
+bx C"
+b0 C#
+b0 C$
+0C%
+b0 C&
+b0 D
+b0 D!
+xD"
+bx D#
+b0 D$
+0D%
+b0 D&
+b0 E
+b0 E!
+0E"
+bx E#
+b0 E$
+bx E%
+b1111111111 E&
+b0 F
+b0 F!
+b0 F"
+bx F#
+0F$
+b0 F%
+b1111111111 F&
+bx G
+b11 G!
+0G"
+bx G#
+1G$
+0G%
+b0 G&
+0H
+b0 H!
+bx0xxxxxxxxxxxxxxxxxxxxxx H"
+bx H#
+1H$
+0H%
+b0 H&
+0I
+bx I!
+b11 I"
+bx I#
+b0 I$
+b0 I%
+b0 I&
+xJ
+bx0xxxxxxxxxxxxxxxxxxxxxxxx0xxxxxxxxxxxxxxxxxxxxxx J!
+b0 J"
+bx J#
+b0 J$
+b0 J%
+b0 J&
+0K
+b0 K!
+b0 K"
+xK#
+bx K$
+b0 K%
+b0 K&
+b0 L
+b0 L!
+b0 L"
+0L#
+bx L$
+b0 L%
+b0 L&
+bx0xxxxxxxxxxxxxxxxxxxxxx M
+b0 M!
+b0 M"
+b0 M#
+bx M$
+0M%
+0M&
+0N
+bx N!
+b11 N"
+0N#
+bx N$
+1N%
+0N&
+1O
+0O!
+b0 O"
+bx0xxxxxxxxxxxxxxxxxxxxxx O#
+bx O$
+1O%
+b10 O&
+1P
+0P!
+bx P"
+b11 P#
+bx P$
+b0 P%
+b0 P&
+b0 Q
+xQ!
+bx0xxxxxxxxxxxxxxxxxxxxxxxx0xxxxxxxxxxxxxxxxxxxxxx Q"
+b0 Q#
+bx Q$
+b0 Q%
+b0 Q&
+0R
+0R!
+b0 R"
+b0 R#
+xR$
+bx R%
+0R&
+0S
+b0 S!
+b0 S"
+b0 S#
+0S$
+bx S%
+0S&
+0T
+bx0xxxxxxxxxxxxxxxxxxxxxx T!
+b0 T"
+b0 T#
+b0 T$
+bx T%
+b10 T&
+0U
+0U!
+bx U"
+b11 U#
+0U$
+bx U%
+b0 U&
+0V
+1V!
+0V"
+b0 V#
+bx0xxxxxxxxxxxxxxxxxxxxxx V$
+bx V%
+b0 V&
+b0 W
+1W!
+0W"
+bx W#
+b11 W$
+bx W%
+0W&
+b0 X
+b0 X!
+xX"
+bx0xxxxxxxxxxxxxxxxxxxxxxxx0xxxxxxxxxxxxxxxxxxxxxx X#
+b0 X$
+b101 X%
+0X&
+0Y
+0Y!
+0Y"
+b0 Y#
+b0 Y$
+1Y%
+b10 Y&
+0Z
+0Z!
+b0 Z"
+b0 Z#
+b0 Z$
+0Z%
+b0 Z&
+0[
+0[!
+bx0xxxxxxxxxxxxxxxxxxxxxx ["
+b0 [#
+b0 [$
+bx [%
+b0 [&
+0\
+0\!
+0\"
+bx \#
+b11 \$
+b0 \%
+0\&
+0]
+0]!
+1]"
+0]#
+b0 ]$
+b0 ]%
+0]&
+0^
+b0 ^!
+1^"
+0^#
+bx ^$
+b0 ^%
+b10 ^&
+0_
+b0 _!
+b0 _"
+x_#
+bx0xxxxxxxxxxxxxxxxxxxxxxxx0xxxxxxxxxxxxxxxxxxxxxx _$
+b0 _%
+b0 _&
+bx `
+0`!
+0`"
+0`#
+b0 `$
+b0 `%
+b0 `&
+b0 a
+0a!
+0a"
+b0 a#
+b0 a$
+b0 a%
+0a&
+0b
+0b!
+0b"
+bx0xxxxxxxxxxxxxxxxxxxxxx b#
+b0 b$
+b0 b%
+0b&
+0c
+0c!
+0c"
+0c#
+bx c$
+b0 c%
+b10 c&
+b0 d
+0d!
+0d"
+1d#
+0d$
+0d%
+b0 d&
+b0 e
+0e!
+b0 e"
+1e#
+0e$
+0e%
+b0 e&
+b0 f
+0f!
+b0 f"
+b0 f#
+xf$
+b10 f%
+b0 f&
+b0 g
+bx g!
+0g"
+0g#
+0g$
+b0 g%
+b0 g&
+0h
+b0 h!
+0h"
+0h#
+b0 h$
+b0 h%
+b101 h&
+1i
+0i!
+0i"
+0i#
+bx0xxxxxxxxxxxxxxxxxxxxxx i$
+0i%
+b0 i&
+1j
+0j!
+0j"
+0j#
+0j$
+0j%
+b0 j&
+b0 k
+b0 k!
+0k"
+0k#
+1k$
+b10 k%
+b0 k&
+b0 l
+b0 l!
+0l"
+b0 l#
+1l$
+b0 l%
+b0 l&
+bx m
+b0 m!
+0m"
+b0 m#
+b0 m$
+b0 m%
+b101 m&
+bx n
+b0 n!
+bx n"
+0n#
+0n$
+0n%
+b0 n&
+0o
+0o!
+b0 o"
+0o#
+0o$
+0o%
+b0 o&
+0p
+1p!
+0p"
+0p#
+0p$
+b10 p%
+b0 p&
+xq
+1q!
+0q"
+0q#
+0q$
+b0 q%
+b0 q&
+0r
+b0 r!
+b0 r"
+0r#
+0r$
+b0 r%
+b101 r&
+b0 s
+b0 s!
+b0 s"
+0s#
+b0 s$
+0s%
+b0 s&
+bx0xxxxxxxxxxxxxxxxxxxxxx t
+bx t!
+b0 t"
+0t#
+b0 t$
+0t%
+b0 t&
+0u
+bx u!
+b0 u"
+bx u#
+0u$
+b10 u%
+b0 u&
+1v
+0v!
+0v"
+b0 v#
+0v$
+b0 v%
+b0 v&
+1w
+0w!
+1w"
+0w#
+0w$
+b0 w%
+b101 w&
+b0 x
+xx!
+1x"
+0x#
+0x$
+0x%
+b0 x&
+0y
+0y!
+b0 y"
+b0 y#
+0y$
+0y%
+b0 y&
+0z
+b0 z!
+b0 z"
+b0 z#
+0z$
+b10 z%
+b0 z&
+0{
+bx0xxxxxxxxxxxxxxxxxxxxxx {!
+bx {"
+b0 {#
+0{$
+b0 {%
+b0 {&
+0|
+0|!
+bx |"
+b0 |#
+bx |$
+b0 |%
+b101 |&
+0}
+1}!
+0}"
+0}#
+b0 }$
+b0 }%
+b101 }&
+b0 ~
+1~!
+0~"
+1~#
+0~$
+b0 ~%
+b10 ~&
+$end
+
+#5
+b101 $'
+b10 %'
+b10 &
+b101 &'
+b10 '
+b10 ''
+b10 (
+b101 ('
+b0 )
+b10 )'
+b1 *
+b101 *'
+b1 +
+b10 +'
+0,
+1.
+0/
+10'
+b1111111111 1
+b0 2
+03
+14
+06
+b101 ;&
+b101 <&
+0=!
+b10 =&
+b101 >&
+b10 ?&
+0@&
+1A&
+b0 B&
+0D"
+0K#
+0R$
+0Y%
+1Z%
+b1111111111 [%
+
+#10
+0.
+04
+0A&
+0Z%
+
+#15
+b100100000000000000000 !
+b1 #
+b10 )
+1.
+b0 /'
+14
+bx 5
+06
+b100100000000000000000 <!
+1=!
+b10 ?"
+b10 @"
+b0 A"
+1A&
+b0 B"
+bx C"
+0D"
+b100100000000000000000 I!
+bx J#
+0K#
+b1 M!
+b100100000000000000000 N!
+1P!
+bx Q$
+0R$
+1Z%
+b1 _!
+1b!
+1j!
+b1 n!
+0p!
+b1 s!
+b1 t!
+b0 u!
+
+#20
+b1 %
+0.
+04
+0A&
+0Z%
+
+#25
+b100000000000000000000001 !
+b101 !'
+b101 "'
+b10 #
+b10 #'
+b101 $'
+b10 %'
+b101 &'
+b10 ''
+b101 ('
+b10 )'
+b101 *'
+b10 +'
+0,'
+b0 -'
+1.
+b1 /'
+14
+bx 5
+b100000000000000000000001 <!
+b1 ?!
+b0 ?"
+b0 @"
+b100100000000000000000 A!
+b110 A"
+1A&
+b110 B"
+bx C"
+b100 C&
+b1 D!
+b100 D&
+b1111111110 F&
+b10 G!
+b100 G&
+b10 H&
+b10000000000000000000001 I!
+b10 I&
+bx0xxxxxxxxxxxxxxxxxxxxxx0000100100000000000000000 J!
+bx J#
+b100 J&
+b11 K!
+b0 K&
+b1 M!
+b10000000000000000000001 N!
+b1 P&
+0Q!
+bx Q$
+b1 Q&
+1R!
+b11 S!
+1S&
+b100100000000000000000 T!
+b0 T&
+b0 U&
+0V!
+b101 X%
+1Y!
+1Z%
+b0 Z&
+b1 ^!
+b10 _!
+b0 _&
+1b!
+b10 d&
+b10 e&
+b100100000000000000000 g!
+b10 g&
+b1 h&
+b1 l!
+b10 n!
+b1 r!
+b10 s!
+b10 t!
+b1 u!
+xx!
+0y!
+b11 z!
+b101 }&
+b10 ~&
+
+#30
+b10 %
+0.
+04
+0A&
+0Z%
+
+#35
+b100000000000000000000010 !
+b1 !&
+b101 !'
+b101 "'
+b11 #
+b10 #'
+b101 $'
+b10 %'
+b101 &'
+b10 ''
+b101 ('
+b10 )'
+b101 *'
+b10 +'
+1,'
+1.
+b1 .'
+b1 0
+14
+bx 5
+b101 6&
+b10 7&
+b101 8&
+b101 9&
+b10 :&
+b101 ;&
+b100000000000000000000010 <!
+b101 <&
+b10 =&
+b101 >&
+b0 ?!
+b10 ?&
+1@!
+1A&
+bx C"
+b0 C&
+b0 D!
+b0 D&
+b1111111110 E&
+b1111111110 F&
+b0 G&
+b0 H&
+b10000000000000000000010 I!
+b0 I&
+bx J#
+b0 J&
+b0 K&
+b1 L!
+b1 M!
+b10000000000000000000010 N!
+1O!
+b0 P&
+xQ!
+bx Q$
+b0 Q&
+0R!
+1R&
+b10 T&
+b0 U&
+b101 X%
+0Y!
+1Z!
+1Z%
+b0 Z&
+b100 \%
+b100 ]%
+b10 ^!
+b100 ^%
+b10 _%
+b0 _&
+b10 `%
+1a!
+b100 a%
+1b!
+b0 b%
+b0 d&
+b0 e&
+0f!
+b10 f&
+b1 g%
+b1 h%
+b101 h&
+1i!
+1j%
+b0 k%
+b10 l!
+b0 l%
+b1 m!
+b11 n!
+b0 q%
+b10 r!
+b10 s!
+b11 t!
+b10 u!
+b0 v%
+xx!
+0y!
+b10 {%
+b10 |%
+b101 }&
+b10 ~%
+b10 ~&
+
+#40
+b11 %
+0.
+04
+0A&
+0Z%
+
+#45
+b1000000000000000000000011 !
+b100 !&
+b100 #
+b0 (
+1.
+b10 /'
+b1 0
+14
+bx 5
+b101 6&
+b10 7&
+b101 8&
+b101 9&
+b10 :&
+b101 ;&
+b1000000000000000000000011 <!
+b101 <&
+b10 =&
+b101 >&
+b10 ?&
+b100000000000000000000001 A!
+1A&
+bx C"
+b100000000000000000000011 I!
+bx0xxxxxxxxxxxxxxxxxxxxxx0100000000000000000000001 J!
+bx J#
+b1 L!
+b1 M!
+b100000000000000000000011 N!
+bx Q$
+b100000000000000000000001 T!
+b101 X%
+1Z!
+1Z%
+b100 \%
+b100 ]%
+b10 _%
+b10 `%
+1a!
+b100 a%
+1b!
+1d!
+b10000000000000000000001 g!
+b1 h%
+1i%
+b1 k!
+b1 k%
+b11 l!
+b10 m!
+b100 n!
+b100 t!
+b11 u!
+b10 |%
+b10 }%
+
+#50
+b100 %
+0.
+04
+0A&
+0Z%
+
+#55
+1.
+14
+06
+0=!
+b100000000000000000000010 A!
+1A&
+0D"
+bx0xxxxxxxxxxxxxxxxxxxxxx0100000000000000000000010 J!
+0K#
+b1 L!
+b0 M!
+0P!
+0R$
+b100000000000000000000010 T!
+b101 X%
+1Z!
+1Z%
+1a!
+0b!
+1c!
+0f!
+b10000000000000000000010 g!
+0j!
+b10 k!
+b100 l!
+b11 m!
+b100 n!
+b1 s!
+b11 t!
+b10 u!
+
+#60
+b101 %
+0.
+04
+0A&
+0Z%
+
+#65
+1.
+14
+b1000000000000000000000011 A!
+1A&
+bx0xxxxxxxxxxxxxxxxxxxxxx1000000000000000000000011 J!
+b1 L!
+b1000000000000000000000011 T!
+b101 X%
+1Z!
+1Z%
+b0 _!
+1a!
+0d!
+1e!
+b100000000000000000000011 g!
+b11 k!
+b100 m!
+1p!
+b1 r!
+b0 s!
+b100 t!
+b11 u!
+
+#70
+b110 %
+0.
+04
+0A&
+0Z%
+
+#75
+b101 !&
+1.
+b0 0
+14
+b101 6&
+b10 7&
+b101 8&
+b101 9&
+b10 :&
+b101 ;&
+b101 <&
+b10 =&
+b101 >&
+b10 ?&
+0@!
+bx0xxxxxxxxxxxxxxxxxxxxxx A!
+1A&
+b1 C!
+b11 G!
+bx0xxxxxxxxxxxxxxxxxxxxxxxx0xxxxxxxxxxxxxxxxxxxxxx J!
+b0 L!
+0O!
+bx0xxxxxxxxxxxxxxxxxxxxxx T!
+1V!
+b101 X%
+0Z!
+1Z%
+1[!
+b0 \%
+b0 ]%
+b0 ^!
+b0 ^%
+b0 _%
+b0 `%
+0a!
+b0 a%
+b0 b%
+0c!
+0e!
+0f!
+bx g!
+b0 g%
+b0 h%
+0i!
+b100 k!
+b10 k%
+b0 l%
+b0 q%
+b0 r!
+b0 v%
+b0 {%
+b0 |%
+
+#80
+b111 %
+0.
+04
+0A&
+0Z%
+
+#85
+1.
+14
+1A&
+b0 C!
+1Z%
+0[!
+
+#90
+b1000 %
+0.
+04
+0A&
+0Z%
+
+#95
+1.
+14
+1A&
+1Z%
+
+#100
+b1001 %
+0.
+04
+0A&
+0Z%
+
+#105
+1.
+14
+1A&
+1Z%
+
+#110
+b1010 %
+0.
+04
+0A&
+0Z%
+
+#115
+1.
+14
+1A&
+1Z%
+
+#120
+b1011 %
+0.
+04
+0A&
+0Z%
+
+#125
+1.
+14
+1A&
+1Z%
+
+#130
+b1100 %
+0.
+04
+0A&
+0Z%
+
+#135
+1.
+14
+1A&
+1Z%
+
+#140
+b1101 %
+0.
+04
+0A&
+0Z%
+
+#145
+1.
+14
+1A&
+1Z%
+
+#150
+b1110 %
+0.
+04
+0A&
+0Z%
+
+#155
+1.
+14
+1A&
+1Z%
+
+#160
+b1111 %
+0.
+04
+0A&
+0Z%
+
+#165
+1.
+14
+1A&
+1Z%
+
+#170
+b10000 %
+0.
+04
+0A&
+0Z%
+
+#175
+1.
+14
+1A&
+1Z%
+
+#180
+b10001 %
+0.
+04
+0A&
+0Z%
+
+#185
+1.
+14
+1A&
+1Z%
+
+#190
+b10010 %
+0.
+04
+0A&
+0Z%
+
+#195
+1.
+14
+1A&
+1Z%
+
+#200
+b10011 %
+0.
+04
+0A&
+0Z%
+
+#205
+1.
+14
+1A&
+1Z%
+
+#210
+b10100 %
+0.
+04
+0A&
+0Z%
+
+#215
+1.
+14
+1A&
+1Z%
+
+#220
+0.
+04
+0A&
+0Z%
+
+#225
+1.
+14
+1A&
+1Z%
+
+#230
+0.
+04
+0A&
+0Z%
+
+#235
+1.
+14
+1A&
+1Z%
+
+#240
+0.
+04
+0A&
+0Z%
+
+#245
+1.
+14
+1A&
+1Z%
+
+#250
+0.
+04
+0A&
+0Z%

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_all_modules_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="noc_params" />
+            <top_module name="tb_all_modules" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="261 ps"></ZoomEndTime>
+      <Cursor1Time time="96 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="214"></NameColumnWidth>
+      <ValueColumnWidth column_width="336"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="29" />
+   <wvobject fp_name="/tb_all_modules/flit_written" type="array">
+      <obj_property name="ElementShortName">flit_written</obj_property>
+      <obj_property name="ObjectShortName">flit_written</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/flit_read" type="array">
+      <obj_property name="ElementShortName">flit_read</obj_property>
+      <obj_property name="ObjectShortName">flit_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/num_op" type="array">
+      <obj_property name="ElementShortName">num_op[31:0]</obj_property>
+      <obj_property name="ObjectShortName">num_op[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/timer" type="array">
+      <obj_property name="ElementShortName">timer[31:0]</obj_property>
+      <obj_property name="ObjectShortName">timer[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/total_time" type="array">
+      <obj_property name="ElementShortName">total_time[31:0]</obj_property>
+      <obj_property name="ObjectShortName">total_time[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/x_dest" type="array">
+      <obj_property name="ElementShortName">x_dest[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x_dest[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/y_dest" type="array">
+      <obj_property name="ElementShortName">y_dest[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y_dest[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/pkt_size" type="array">
+      <obj_property name="ElementShortName">pkt_size[0:4][31:0]</obj_property>
+      <obj_property name="ObjectShortName">pkt_size[0:4][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/flit_num" type="array">
+      <obj_property name="ElementShortName">flit_num[0:4][31:0]</obj_property>
+      <obj_property name="ObjectShortName">flit_num[0:4][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/flit_to_read" type="array">
+      <obj_property name="ElementShortName">flit_to_read[0:4][31:0]</obj_property>
+      <obj_property name="ObjectShortName">flit_to_read[0:4][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/flit_to_read_next" type="array">
+      <obj_property name="ElementShortName">flit_to_read_next[0:4][31:0]</obj_property>
+      <obj_property name="ObjectShortName">flit_to_read_next[0:4][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/multiple_head" type="array">
+      <obj_property name="ElementShortName">multiple_head[0:4][31:0]</obj_property>
+      <obj_property name="ObjectShortName">multiple_head[0:4][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/wait_time" type="array">
+      <obj_property name="ElementShortName">wait_time[0:4][31:0]</obj_property>
+      <obj_property name="ObjectShortName">wait_time[0:4][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/insert_not_compl" type="array">
+      <obj_property name="ElementShortName">insert_not_compl[4:0]</obj_property>
+      <obj_property name="ObjectShortName">insert_not_compl[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/head_done" type="array">
+      <obj_property name="ElementShortName">head_done[4:0]</obj_property>
+      <obj_property name="ObjectShortName">head_done[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/port_num" type="array">
+      <obj_property name="ElementShortName">port_num[2:0]</obj_property>
+      <obj_property name="ObjectShortName">port_num[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/test_port_num" type="array">
+      <obj_property name="ElementShortName">test_port_num[2:0]</obj_property>
+      <obj_property name="ObjectShortName">test_port_num[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/vc_num_next" type="array">
+      <obj_property name="ElementShortName">vc_num_next[0:0]</obj_property>
+      <obj_property name="ObjectShortName">vc_num_next[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/error_o" type="array">
+      <obj_property name="ElementShortName">error_o[4:0][1:0]</obj_property>
+      <obj_property name="ObjectShortName">error_o[4:0][1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[4:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/valid_flit_out" type="array">
+      <obj_property name="ElementShortName">valid_flit_out[4:0]</obj_property>
+      <obj_property name="ObjectShortName">valid_flit_out[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/on_off_in" type="array">
+      <obj_property name="ElementShortName">on_off_in[4:0][1:0]</obj_property>
+      <obj_property name="ObjectShortName">on_off_in[4:0][1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/is_allocatable_in" type="array">
+      <obj_property name="ElementShortName">is_allocatable_in[4:0][1:0]</obj_property>
+      <obj_property name="ObjectShortName">is_allocatable_in[4:0][1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[4:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/valid_flit_in" type="array">
+      <obj_property name="ElementShortName">valid_flit_in[4:0]</obj_property>
+      <obj_property name="ObjectShortName">valid_flit_in[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/on_off_out" type="array">
+      <obj_property name="ElementShortName">on_off_out[4:0][1:0]</obj_property>
+      <obj_property name="ObjectShortName">on_off_out[4:0][1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_all_modules/is_allocatable_out" type="array">
+      <obj_property name="ElementShortName">is_allocatable_out[4:0][1:0]</obj_property>
+      <obj_property name="ObjectShortName">is_allocatable_out[4:0][1:0]</obj_property>
+   </wvobject>
+</wave_config>
